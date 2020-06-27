@@ -6,7 +6,7 @@ import StyledLink from '../utils/styled-link';
 import media from '../utils/media';
 
 const Container = styled.div`
-  padding: 1rem 0;
+  width: max-content;
   margin: 1rem 0;
 
   &:first-child {
@@ -21,21 +21,26 @@ const Container = styled.div`
 
 const Title = styled.h4`
   margin-bottom: 0.2rem;
-  font-size: 2.2rem;
+  color: #457b9d;
+  font-size: 2.0rem;
+  width: max-content;
 `;
 
 const Post = ({ node }) => (
-  <StyledLink to={node.fields.slug}>
-    <Container>
+  <Container>
+    <StyledLink to={node.fields.slug}>
       <Title>{node.frontmatter.title}</Title>
-      <sub>
+    </StyledLink>
+    <span>on {node.frontmatter.date}</span>
+    {
+      /*<sub>
         <span>on {node.frontmatter.date}</span>
         <span>&nbsp; - &nbsp;</span>
         <span>{node.fields.readingTime.text}</span>
       </sub>
       <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-    </Container>
-  </StyledLink>
+    */}
+  </Container>
 );
 
 Post.propTypes = {

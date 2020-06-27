@@ -94,7 +94,7 @@ class Layout extends Component {
         `}
         render={data => (
           <>
-            <Header title={data.site.siteMetadata.title} />
+            {/*<Header title={data.site.siteMetadata.title} />*/}
             <Content>{children}</Content>
             <Footer />
             <GlobalStyles />

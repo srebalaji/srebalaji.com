@@ -1,6 +1,7 @@
 ---
 title: 'Lets look at some code'
 date: '2018-04-14T22:12:03.284Z'
+canonicalLink: 'https://google.com'
 ---
 
 Probably because you are using it wrong.

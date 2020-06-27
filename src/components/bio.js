@@ -54,6 +54,7 @@ const TwitterIcon = styled.img`
   padding: 1.5rem 1rem;
 `;
 
+
 const Bio = () => (
   <StaticQuery
     query={bioQuery}
@@ -73,7 +74,7 @@ const Bio = () => (
             </a>
           </TextContainer>
           <ImageContainer>
-            <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
+            <Image fixed={data.avatar.childImageSharp.fixed} alt={author} style={{'border-radius': '50%'}}/>
           </ImageContainer>
         </Container>
       );
@@ -83,7 +84,7 @@ const Bio = () => (
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/icon.png/" }) {
+    avatar: file(absolutePath: { regex: "/logo-icon.png/" }) {
       childImageSharp {
         fixed(width: 70, height: 70) {
           ...GatsbyImageSharpFixed

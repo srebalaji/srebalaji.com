@@ -12,7 +12,7 @@ const Title = styled.h3`
   font-weight: 800;
   font-size: 2.6rem;
   margin: 6rem 0 0;
-
+  color: #1d3557;
   ${media.phone`
     margin: 3rem 0 0;
   `}
@@ -24,7 +24,7 @@ class BlogIndex extends Component {
     const posts = data.allMarkdownRemark.edges;
     return (
       <Layout>
-        <SEO title="All Posts" keywords={[`gatsby`, `blog`, `react`]} />
+        <SEO title="All Posts" />
         <Bio />
         <main>
           <Title>Latest Posts</Title>

@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog Starter`,
-    description: `A Blog starter`,
-    author: `Boy with Silver Wings`,
-    authorTagline: 'Engineer. Driven by Passion',
+    title: `Srebalaji Thirumalai`,
+    description: `A personal blog `,
+    author: `Srebalaji Thirumalai`,
+    authorTagline: 'Made in India. Developer. Serial maker. I write about programming.',
     social: {
-      twitter: `agneymenon`,
+      twitter: `srebalaji`,
     },
   },
   plugins: [
@@ -67,7 +67,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo-icon.png`, // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
