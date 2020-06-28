@@ -6,7 +6,6 @@ import StyledLink from '../utils/styled-link';
 import media from '../utils/media';
 
 const Container = styled.div`
-  width: max-content;
   margin: 1rem 0;
 
   &:first-child {
@@ -23,7 +22,6 @@ const Title = styled.h4`
   margin-bottom: 0.2rem;
   color: #457b9d;
   font-size: 2.0rem;
-  width: max-content;
 `;
 
 const Post = ({ node }) => (
